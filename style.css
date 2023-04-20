@@ -1,0 +1,508 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif ;
+}
+body{
+    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        
+}
+
+/* -----------LOGO--------- */
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    }
+
+h1{
+    color: #a06e40;
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    text-decoration: none;
+}
+span{
+    color: #ff7700;
+}
+/* ------------------------ */ 
+
+/* ----------- NAVEGADOR--------- */
+.navegador{
+    display: flex;
+    min-height: 70px;
+    background-color: #181818;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.listanavegador a{
+ text-decoration: none;
+ color: azure;
+ font-weight: 600;
+ padding-right: 10px;
+ margin-right: 10px;
+}
+
+
+
+img.cardimg{
+    width: 300px;
+   
+}
+
+nav a:hover {
+    color: #ff7700;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+ }
+
+ nav{
+    padding: 10px 0px;
+ }
+
+}
+/* -------------HERO---------- */
+.hero{
+position: relative;
+width: 100%;
+height: calc(98vh - 70px);
+background-color: #504f4e;
+background-size: cover;
+background-position: center;
+transition: all .1s ease-in-out;
+background-image: url(./img/burgerfondo1.png);
+animation: banner 24s infinite linear;
+}
+
+.banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(27, 25, 14, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------TEXTO Y BUTTOM DEL BANNERR */
+
+.banner h2{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 35px;
+    text-align: center;  
+}
+
+#button{
+    box-shadow: 1px 1px 9px 3px #181818;
+}
+
+.banner a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 9px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 9px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.banner a:hover{
+    background: #ff7700;
+}
+/* ------------------------------------------------------- */
+/* ----------Animacion-------- */
+
+@keyframes banner {
+    0%{
+       background-image: url("./img/burgerfondo1.png") 
+    }
+    25%{
+        background-image: url("./img/burgerfondo1.png");
+    }
+    26%{
+        background-image: url("./img/burgerfondo2.png");
+    }
+    50%{
+        background-image: url("./img/burgerfondo2.png");
+    }
+    51%{
+        background-image: url("./img/delivery.jpg");
+    }
+    75%{
+        background-image: url("./img/delivery.jpg");
+    }
+    76%{
+        background-image: url("./img/burgerfondo4.png");
+    }
+    100%{
+        background-image: url("./img/burgerfondo4.png");
+    }
+
+
+}
+.nuestrashamburguesas{
+    text-decoration: none;
+}
+/* ---------------HAMBURGUESAS-------------------- */
+
+/* .divbody{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+} */
+
+/* Todas las Cards y div */
+/* .cardburger{ 
+    display: flex;
+    border-radius: 15px;
+} */
+
+.cardburger{
+    
+    background-color: #a06e40;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,1fr);
+    
+    background: #6b6868;
+    padding: 20px;
+        
+}
+
+/* Solo las cards */
+.contenido{  
+    height: 100%;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 1px 1px 15px rgb(37, 35, 35) ;
+    overflow: hidden;
+    background: #a06e40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+
+/*---- Contenedorr de Cartas */
+
+
+
+
+/* .cardimg{                     
+    height: 450px;
+    width: 350px;
+    border-radius: 15px;
+    transition: .5s;
+} */
+
+/* div.contenido{
+    color: rgb(159, 14, 196);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20%;
+    width: 100%;
+   } */
+
+
+
+/* -----------Caja Flexible-------- */
+
+/* .intro{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0px;
+    background: rgb(27, 27, 27);
+    color: #88df16;
+    transition: .5s;
+    font-size: 19px;
+    margin: 0px;
+    border-radius: 15px;
+} */
+
+
+/*---------- NOMBRE DE HAMBURGUESAS---- */
+  h3{
+    
+    font-family: 'Roboto', sans-serif; 
+    margin: 2px;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+ }
+
+ .burger{
+    text-decoration: none;
+ }
+ 
+/*--- Info de Caja Flexible--- */
+/*  .laquiero{ 
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: #ff7700;
+    align-items: end;
+    padding: 0;
+ } */
+ 
+ /* p{
+    font-size: 23px;
+    margin-top: 3px;
+ } */
+
+
+ /* .laquiero{ <----------//*ERRORES//* (me volvi loco "Erick")
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+
+ } */
+
+ /* .contenido:hover{
+    cursor: pointer;
+
+ } */
+/* ----------Animacion de PRECIOS-------- */
+ .contenido:hover .intro{
+    height: 100%;
+    width: 100%;
+    bottom: 50px;
+    background: #181818;
+    transition: .5s ease-in-out;
+ }
+
+ .contenido:hover p{
+    opacity: 1;
+    visibility: visible;
+ }
+
+ .contenido:hover .cardimg{
+    transform: scale(.9) /* rotate(-3deg) */;
+ }
+/* -------------------------------------------------- */
+ @media(min-width: 480px){
+  
+    .contenido{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divbody{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* FONDO DE CALSICA; BACON; TRIPLE CARNE MAS LOS PRECIOS */
+    .intro{
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;  
+        width: 100%;
+        height: 100%;
+        
+    }
+ }
+
+    div.h4{
+        background-color: #ff7700bb;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+ }
+
+    h4{
+        
+        color: #FFF;
+        font-size: 50px;
+ }
+
+ /* ---------------------------DELIVERY----------------------- */
+/*  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    } */
+
+/* 
+    
+body{
+    background-image: url(https://assets.adnradio.cl/2020/05/Uber-Eats-1-e1590709851475-925x470.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+header{
+    background-color: rgb(17, 16, 16);
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+    color: rgb(255, 255, 255);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    margin-top: 2px;
+    background-image: url("./img/delivery2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 3vw;
+    gap: 10vh;
+    color: #ff7700;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(33, 33, 33);
+    padding: 3vh 5vw;
+    text-align: center;
+    color: white;
+}
+
+footer .footer-text{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    color: rgb(63, 60, 60);
+}
+main form .inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 18px;
+    color: white;
+}
+main form .inputContainer input,select{
+    border: none;
+    border-bottom:  rgb(27, 27, 27);
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 15px 1px #181818;
+}
+.btn-confirmarpedido{
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+    color: #FFF;
+    border:solid rgb(33, 33, 33) 1px;
+    box-shadow: 2px 2px 15px 1px #181818;
+    width: 170px;
+    font-size: 18px;
+}
+
+.btn-confirmarpedido:hover{ 
+    transition: 1s ease-in-out;
+    color: rgb(33, 33, 33);
+    background-color: #ff7700;
+}
+
+input{
+    border-radius: 15px;
+    background-color: rgba(58, 57, 57, 0.733);
+    color: #FFF;
+}
+
+select{
+    background-color: rgba(58, 57, 57, 0.6);
+    border-radius: 15px;
+}
+
+#propina{
+    color: #FFF;
+    border-radius: none;
+}
+
+.titulo-delivery{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0%;
+    
+}
+
+/* p{
+    display: flex;
+    justify-content: center;
+    color: #ac3a3a ;
+    font-size: 18px;
+} */
+
+.precios{
+        display: flex;
+        justify-content: center;
+        color: #a50f0f ;
+        font-size: 23px;
+        text-decoration: none;
+    }
+
+/* img.cardimg{
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+  }
+ */
+  
+
